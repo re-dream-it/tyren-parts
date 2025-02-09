@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="sprites"><symbol viewBox="0 0 16 16" id="arrow-button" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aaa)"><path d="M10.781 7.333 7.205 3.757l.943-.942L13.333 8l-5.185 5.185-.943-.942 3.576-3.576H2.667V7.333h8.114Z"/></g><defs><clipPath id="aaa"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 40 40" id="assortment" xmlns="http://www.w3.org/2000/svg"><path d="M20.937 18.75v8.75a.937.937 0 1 1-1.875 0v-8.75a.937.937 0 1 1 1.875 0Zm16.232-3.46-2.17 16.25a2.188 2.188 0 0 1-2.166 1.898H7.167A2.188 2.188 0 0 1 5 31.538L2.833 15.29A2.188 2.188 0 0 1 5 12.813h5.825l8.469-9.68a.938.938 0 0 1 1.406 0l8.469 9.687h5.83a2.188 2.188 0 0 1 2.168 2.477l.002-.008Zm-23.853-2.477h13.368L20 5.173l-6.684 7.64Zm21.918 1.98a.313.313 0 0 0-.234-.105H5a.312.312 0 0 0-.313.353l2.166 16.25a.313.313 0 0 0 .312.27h25.668a.313.313 0 0 0 .312-.27l2.167-16.25a.302.302 0 0 0-.078-.247Zm-6.89 3.02a.938.938 0 0 0-1.027.839l-.875 8.75a.938.938 0 0 0 .84 1.035h.094a.937.937 0 0 0 .938-.843l.875-8.75a.938.938 0 0 0-.845-1.032Zm-15.661.843a.938.938 0 0 0-1.866.188l.875 8.75a.938.938 0 0 0 .938.843h.095a.937.937 0 0 0 .839-1.026l-.881-8.755Z"/></symbol><symbol viewBox="0 0 16 16" id="automobile" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aca)"><path d="M12.667 13.333H3.333V14a.667.667 0 0 1-.666.667H2A.667.667 0 0 1 1.333 14V9l-.828-.207A.667.667 0 0 1 0 8.147v-.48a.333.333 0 0 1 .333-.334h1l1.654-3.858a1.333 1.333 0 0 1 1.226-.808h7.574a1.333 1.333 0 0 1 1.225.808l1.655 3.858h1a.333.333 0 0 1 .333.334v.48a.667.667 0 0 1-.505.646L14.667 9v5a.667.667 0 0 1-.667.667h-.667a.667.667 0 0 1-.666-.667v-.667ZM13.333 12V8.667H2.667V12h10.666ZM3.651 7.333h8.698a.666.666 0 0 0 .618-.914L12 4H4l-.967 2.42a.666.666 0 0 0 .618.913Zm-.318 2c1.545 0 2.586.504 3.124 1.51a.333.333 0 0 1-.294.49H4a.667.667 0 0 1-.667-.666V9.333Zm9.334 0v1.334a.667.667 0 0 1-.667.666H9.837a.334.334 0 0 1-.294-.49c.537-1.007 1.578-1.51 3.124-1.51Z"/></g><defs><clipPath id="aca"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 32 32" id="b" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Zm-.163-24H12v16h3.958c1.272 0 2.27-.184 2.993-.553a3.249 3.249 0 0 0 1.567-1.719c.321-.777.482-1.745.482-2.903v-5.847c0-1.133-.16-2.068-.482-2.805-.308-.738-.837-1.284-1.587-1.64C18.194 8.178 17.163 8 15.837 8Zm.04 13.965h-.904v-11.89h.864c.656 0 1.132.091 1.426.276.295.184.49.474.583.869.094.395.14.915.14 1.56v6.124c0 .658-.033 1.218-.1 1.679-.067.448-.248.79-.542 1.027-.295.237-.784.355-1.467.355Z"/></symbol><symbol viewBox="0 0 20 20" id="barcode" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aea)"><path d="M1.667 3.333h1.666v13.334H1.667V3.333Zm3.333 0h.833v13.334H5V3.333Zm1.667 0h1.666v13.334H6.667V3.333Zm2.5 0h1.666v13.334H9.167V3.333Zm2.5 0h1.666v13.334h-1.666V3.333Zm2.5 0H15v13.334h-.833V3.333Zm1.666 0h2.5v13.334h-2.5V3.333Z"/></g><defs><clipPath id="aea"><path d="M0 0h20v20H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 6 12" id="breadcrumbs-divider" xmlns="http://www.w3.org/2000/svg"><path d="M.64 11.7 4.6.396h1.344L1.984 11.7H.64Z"/></symbol><symbol viewBox="0 0 16 16" id="categories" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aga)"><path d="M2 2h5.333v5.333H2V2Zm0 6.667h5.333V14H2V8.667ZM8.667 2H14v5.333H8.667V2Zm0 6.667H14V14H8.667V8.667ZM10 3.333V6h2.667V3.333H10ZM10 10v2.667h2.667V10H10ZM3.333 3.333V6H6V3.333H3.333Zm0 6.667v2.667H6V10H3.333Z"/></g><defs><clipPath id="aga"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 12 12" id="close" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aha)"><path d="M6 5.268 9.75 1.5l.707.71-3.75 3.768L10.5 9.79l-.707.71L6 6.689 2.207 10.5 1.5 9.79l3.793-3.812-3.75-3.768.707-.71L6 5.268Z"/></g><defs><clipPath id="aha"><path d="M0 0h12v12H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 16 16" id="download" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aia)"><path d="M8.667 8h2L8 10.667 5.333 8h2V5.333h1.334V8ZM10 2.667H3.333v10.666h9.334v-8H10V2.667Zm-8-.672c0-.366.298-.662.666-.662h8L14 4.667v9.328a.666.666 0 0 1-.662.672H2.662A.666.666 0 0 1 2 14.005V1.995Z"/></g><defs><clipPath id="aia"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 32 32" id="dzen" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Zm.086-8c.108-3.543.2-5.16 1.457-6.457C18.84 16.286 20.457 16.2 24 16.086c0 3.194-.011 5.583-1.154 6.76C21.669 23.989 19.389 24 16.086 24Zm-6.932-1.154C8.011 21.669 8 19.28 8 16.086c3.543.108 5.16.2 6.457 1.457C15.714 18.84 15.8 20.457 15.914 24c-3.303 0-5.583-.011-6.76-1.154Zm0-13.692C10.331 8.011 12.617 8 15.914 8c-.108 3.543-.2 5.16-1.457 6.457C13.16 15.714 11.543 15.8 8 15.914c0-3.194.011-5.583 1.154-6.76ZM16.086 8c.108 3.543.2 5.16 1.457 6.457C18.84 15.714 20.457 15.8 24 15.914c0-3.194-.011-5.583-1.154-6.76C21.669 8.011 19.389 8 16.086 8Z"/></symbol><symbol viewBox="0 0 40 40" id="experience" xmlns="http://www.w3.org/2000/svg"><path d="m39.19 14.173-18.75-10a.928.928 0 0 0-.88 0l-18.75 10a.938.938 0 0 0 0 1.654l4.503 2.403v7.753c0 .537.197 1.055.554 1.456C7.878 29.68 12.39 33.437 20 33.437c2.68.026 5.338-.491 7.813-1.52V37.5a.938.938 0 0 0 1.875 0v-6.508a17.685 17.685 0 0 0 4.445-3.555c.358-.4.556-.917.555-1.454V18.23l4.503-2.403a.938.938 0 0 0 0-1.654ZM20 31.563c-6.875 0-10.937-3.37-12.737-5.377a.312.312 0 0 1-.075-.203V19.23l12.372 6.596a.936.936 0 0 0 .88 0l7.373-3.93v7.968c-2.032.972-4.617 1.698-7.813 1.698Zm12.813-5.58a.312.312 0 0 1-.075.203c-.9.997-1.926 1.875-3.05 2.61v-7.9l3.125-1.666v6.753Zm-3.461-7.031a.984.984 0 0 0-.157-.111l-8.75-4.666a.937.937 0 0 0-.88 1.653L27.382 20 20 23.938 3.242 15 20 6.062 36.758 15l-7.406 3.952Z"/></symbol><symbol viewBox="0 0 18 18" id="link-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.19 16.25.47 1.53 1.53.47l14.72 14.72V1h1.5v16.75H1v-1.5h14.19Z"/></symbol><symbol viewBox="0 0 16 16" id="list" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ama)"><path d="M5.333 2.667H14V4H5.333V2.667ZM3 4.333a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM3 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 4.6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm2.333-6.267H14v1.334H5.333V7.333Zm0 4.667H14v1.333H5.333V12Z"/></g><defs><clipPath id="ama"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 171 36" id="logotype" xmlns="http://www.w3.org/2000/svg"><path d="M82.67 28.953h-4.573v.86h1.787v4.62h1.003v-4.62h1.784v-.86ZM85.77 30.475a2.128 2.128 0 0 0-1.073-.269c-.4 0-.771.092-1.094.276a1.946 1.946 0 0 0-.758.764 2.2 2.2 0 0 0-.274 1.098c0 .407.094.78.28 1.108.188.328.455.58.797.764.345.184.742.276 1.194.276.355 0 .67-.06.955-.174.28-.115.516-.285.7-.508l-.516-.604c-.294.302-.665.453-1.117.453-.354 0-.651-.089-.89-.27a1.13 1.13 0 0 1-.442-.73h3.226c.01-.125.016-.223.016-.289a2.33 2.33 0 0 0-.264-1.131 1.911 1.911 0 0 0-.74-.76m-2.244 1.53c.045-.308.177-.554.39-.74.213-.188.474-.28.78-.28.307 0 .575.096.788.283.21.187.335.433.377.734H83.53l-.003.004ZM89.577 31.036c.21 0 .403.049.58.144.178.095.327.242.443.433l.738-.44a1.61 1.61 0 0 0-.69-.721 2.19 2.19 0 0 0-1.068-.25 2.36 2.36 0 0 0-1.151.276c-.336.184-.6.436-.79.758a2.14 2.14 0 0 0-.284 1.105c0 .413.093.78.283 1.108.19.328.455.58.794.764.339.184.72.275 1.145.275.4 0 .755-.085 1.058-.255.307-.17.539-.41.697-.725l-.739-.44a1.17 1.17 0 0 1-.442.433 1.175 1.175 0 0 1-.58.145c-.365 0-.665-.118-.897-.358-.232-.24-.352-.554-.352-.95 0-.397.12-.715.355-.951.236-.24.536-.358.894-.358M94.467 30.206c-.287 0-.548.046-.78.138a1.563 1.563 0 0 0-.59.396v-2.114h-.962v5.807h.961v-2.115c0-.407.104-.718.307-.935.206-.216.484-.324.838-.324.313 0 .555.091.723.278.171.187.255.463.255.827v2.269h.964v-2.394c0-.607-.158-1.062-.47-1.37-.313-.309-.73-.463-1.249-.463M99.741 30.206c-.303 0-.574.05-.816.148a1.483 1.483 0 0 0-.6.439v-.541h-.916v4.18h.961v-2.114c0-.407.104-.718.307-.935.206-.216.484-.324.838-.324.313 0 .555.091.723.278.171.187.255.463.255.827v2.269h.964v-2.394c0-.607-.158-1.062-.471-1.37-.313-.309-.729-.463-1.248-.463M105.702 30.478a2.299 2.299 0 0 0-1.132-.275c-.422 0-.79.092-1.126.275a1.99 1.99 0 0 0-.78.758 2.171 2.171 0 0 0-.281 1.105c0 .413.094.78.281 1.108.187.325.448.58.78.764.333.184.71.275 1.126.275.416 0 .797-.091 1.132-.275.333-.184.594-.436.781-.764.187-.325.281-.695.281-1.108 0-.414-.094-.78-.281-1.105a1.96 1.96 0 0 0-.781-.758Zm-.254 2.81c-.233.24-.523.361-.878.361s-.645-.121-.874-.36c-.229-.24-.342-.558-.342-.948 0-.39.116-.709.342-.948.229-.24.519-.36.874-.36s.645.12.878.36c.232.24.345.554.345.948 0 .393-.116.708-.345.947ZM108.651 28.622h-.962v5.807h.962v-5.807ZM112.892 30.478a2.299 2.299 0 0 0-1.132-.275c-.422 0-.79.092-1.126.275a1.99 1.99 0 0 0-.78.758 2.171 2.171 0 0 0-.281 1.105c0 .413.094.78.281 1.108.187.325.448.58.78.764.333.184.71.275 1.126.275.416 0 .797-.091 1.132-.275.333-.184.594-.436.781-.764.187-.325.281-.695.281-1.108 0-.414-.094-.78-.281-1.105a1.96 1.96 0 0 0-.781-.758Zm-.254 2.81c-.233.24-.523.361-.878.361s-.645-.121-.874-.36c-.229-.24-.342-.558-.342-.948 0-.39.113-.709.342-.948.229-.24.519-.36.874-.36s.645.12.878.36c.232.24.345.554.345.948 0 .393-.116.708-.345.947ZM118.044 30.806a1.492 1.492 0 0 0-.613-.452 2.163 2.163 0 0 0-.813-.148c-.39 0-.742.085-1.058.25a1.89 1.89 0 0 0-.748.707 2.024 2.024 0 0 0-.274 1.053c0 .397.09.748.274 1.056.184.308.432.547.748.715.316.17.668.255 1.058.255.281 0 .542-.049.777-.14a1.59 1.59 0 0 0 .6-.414v.22c0 .426-.106.744-.316.954-.209.207-.542.312-.993.312a2.63 2.63 0 0 1-.836-.138 2.04 2.04 0 0 1-.68-.364l-.433.735c.23.193.523.34.878.442.355.102.729.151 1.122.151 1.478 0 2.22-.734 2.22-2.207V30.25h-.916v.557h.003Zm-.381 2.272c-.235.223-.532.335-.897.335-.364 0-.67-.112-.906-.335-.232-.223-.352-.508-.352-.865 0-.358.117-.633.352-.853.232-.22.536-.328.906-.328.371 0 .662.108.897.328.232.22.352.502.352.853 0 .35-.116.642-.352.865ZM121.847 33.344l-1.294-3.092h-1l1.794 4.194-.071.164c-.094.21-.194.357-.303.446a.652.652 0 0 1-.42.13.975.975 0 0 1-.38-.078 1.014 1.014 0 0 1-.329-.213l-.384.721c.129.122.293.214.493.282.2.07.404.102.61.102.365 0 .674-.092.932-.279.255-.187.474-.505.655-.957l1.926-4.515h-.923l-1.303 3.092-.003.003ZM131.272 31.973l-.777-.259c-.071.361-.171.67-.3.925l-1.161-1.128c.39-.226.671-.446.845-.666.171-.22.258-.468.258-.75 0-.371-.129-.666-.394-.88-.261-.216-.609-.324-1.048-.324-.471 0-.852.118-1.135.358a1.155 1.155 0 0 0-.426.934c0 .203.045.4.139.59.093.19.245.394.461.614-.442.249-.761.504-.955.764a1.437 1.437 0 0 0-.294.895c0 .282.084.534.255.757.168.223.404.394.7.521.297.125.636.187 1.01.187.703 0 1.306-.22 1.81-.656l.677.666.532-.633-.677-.655a3.79 3.79 0 0 0 .484-1.253m-3.081-2.227c.123-.104.29-.16.5-.16.197 0 .348.046.458.14.11.096.165.224.165.384a.61.61 0 0 1-.181.42c-.119.128-.335.279-.642.45a2.894 2.894 0 0 1-.387-.456.678.678 0 0 1-.1-.358.53.53 0 0 1 .184-.42h.003Zm.323 3.965c-.329 0-.594-.072-.794-.213a.65.65 0 0 1-.3-.558c0-.197.061-.377.187-.534.126-.158.342-.325.652-.499l1.422 1.387a1.777 1.777 0 0 1-1.171.413l.004.004ZM138.756 34.856c-.165 0-.319-.036-.461-.109a1.612 1.612 0 0 1-.439-.35c.4-.115.752-.302 1.055-.561.303-.26.539-.57.709-.938.168-.367.255-.767.255-1.2 0-.538-.125-1.02-.377-1.45a2.691 2.691 0 0 0-1.039-1.006 3.04 3.04 0 0 0-1.487-.364c-.548 0-1.045.121-1.487.364-.442.243-.787.58-1.039 1.01-.251.43-.377.912-.377 1.446 0 .502.11.957.332 1.367.22.41.529.741.923.994.397.252.842.4 1.339.443.396.416.745.711 1.054.882.31.17.645.255 1.016.255.281 0 .542-.055.781-.164.239-.108.448-.272.629-.485l-.461-.564c-.262.292-.571.44-.923.44m-1.787-1.237c-.358 0-.684-.082-.971-.246a1.764 1.764 0 0 1-.677-.688 1.995 1.995 0 0 1-.245-.99c0-.364.08-.696.245-.99.164-.296.39-.525.677-.69a1.92 1.92 0 0 1 .971-.245c.361 0 .684.082.971.246.287.164.513.393.678.688.164.295.245.627.245.99 0 .364-.081.696-.245.99a1.773 1.773 0 0 1-.678.69c-.287.163-.61.245-.971.245ZM143.862 32.367c0 .407-.1.718-.303.934-.203.217-.477.325-.819.325-.307 0-.545-.092-.713-.279-.168-.183-.252-.465-.252-.842v-2.253h-.964v2.387c0 .61.158 1.069.474 1.38.316.312.748.466 1.297.466.267 0 .516-.05.748-.15a1.53 1.53 0 0 0 .577-.434v.532h.917v-4.181h-.962v2.115ZM147.659 30.206c-.339 0-.658.043-.961.131a2.308 2.308 0 0 0-.778.384l.378.711a1.64 1.64 0 0 1 .564-.305 2.12 2.12 0 0 1 .681-.111c.338 0 .593.079.764.236.171.157.258.38.258.672v.063h-1.061c-.59 0-1.022.114-1.297.34a1.116 1.116 0 0 0-.413.906c0 .239.062.455.188.646.125.19.303.337.535.445.232.105.5.161.81.161.309 0 .571-.05.79-.144.219-.099.387-.236.506-.42v.508h.907V31.98c0-.593-.161-1.04-.481-1.335-.319-.295-.784-.442-1.39-.442m.91 2.918a.914.914 0 0 1-.397.482c-.187.111-.4.167-.642.167s-.439-.052-.578-.157a.506.506 0 0 1-.209-.423c0-.37.277-.554.832-.554h.994v.485ZM151.723 28.622h-.961v5.807h.961v-5.807ZM153.949 30.252h-.961v4.18h.961v-4.18ZM153.472 28.39a.61.61 0 0 0-.439.167.552.552 0 0 0-.178.42c0 .167.059.308.178.42a.616.616 0 0 0 .439.166.596.596 0 0 0 .616-.61.52.52 0 0 0-.178-.403.64.64 0 0 0-.438-.16ZM157.413 33.508a.835.835 0 0 1-.538.17c-.184 0-.326-.052-.423-.16-.097-.105-.145-.263-.145-.466v-1.987h1.1v-.784h-1.1v-.954h-.961v.954h-.678v.784h.678v2.013c0 .46.122.81.371 1.05.245.24.596.36 1.048.36.181 0 .352-.023.513-.069.161-.045.3-.117.413-.213l-.271-.695-.007-.003Z"/><path d="m160.023 33.344-1.294-3.092h-.999l1.793 4.194-.068.164c-.093.21-.193.357-.303.446a.65.65 0 0 1-.419.13.98.98 0 0 1-.381-.078 1.024 1.024 0 0 1-.329-.213l-.384.721c.129.122.294.214.494.282.2.07.403.102.609.102.365 0 .675-.092.933-.279.254-.187.474-.505.654-.957l1.926-4.515h-.922l-1.304 3.092-.006.003ZM66.862 11.096a1.933 1.933 0 0 1-2.661.725L43.54 0 7.27 14.395a1.134 1.134 0 0 1-1.475-.67c-.22-.586.058-1.239.623-1.481.006 0 .01-.007.016-.007l4.077-1.744-2.045-5.047-4.261 1.827a6.772 6.772 0 0 0-3.674 3.699 6.914 6.914 0 0 0-.026 5.256 6.772 6.772 0 0 0 3.6 3.718 6.634 6.634 0 0 0 5.132.072l33.86-13.427 14.738 8.433-2.893 4.758-.71-.45c-.116-5.12-2.842-6.564-4.112-6.957-1.59-.492-3.358-.216-5.252.816-1.542.843-3.22 2.223-4.984 4.109-3.387 3.617-7.11 9.043-11.073 16.146l-3.79-4.604a8.896 8.896 0 0 0 1.309-1.584c1.713-2.652 1.852-5.967.416-9.853L21.254 19.5c.738 2.004.796 3.515.168 4.486-.578.895-2.43 2.446-8.336 2.754l-1.71.089-3.819 7.78h6.555l1.003-2.042c1.71-.17 3.255-.456 4.616-.856l2.387 2.899h12.803c1.448-2.512 2.87-4.79 4.235-6.808l3.674 2.325-2.596 4.483h6.81l3.75-6.47-8.083-5.115c.258-.308.51-.607.761-.892 2.568-2.908 4.107-3.721 4.736-3.948.11.384.232 1.151.113 2.496l-.162 1.826 8.67 5.505 6.24-10.256c3.354.95 7.05-.476 8.87-3.68l2.442-4.298 1.648-3.066h-6.767l-2.403 4.384h.003ZM83.729 23.815h5.67v-12.63h5.723l3.722 6.351v6.28h5.675v-6.208l6.344-10.896h-5.48l-3.461 5.912-3.435-5.912h-20.39v4.473h5.632v12.63ZM143.478 19.464h-8.412v-2.246h7.116v-4.155h-7.116V11.06h8.1V6.712h-13.674v17.103h13.986v-4.35ZM156.723 6.712v7.768l-6.393-7.768h-4.665v17.103h5.529v-7.77l6.394 7.77h4.661V6.712h-5.526ZM119.324 11.158c.771 0 1.346.174 1.733.525.383.35.577.843.577 1.479 0 .636-.194 1.128-.577 1.479-.384.35-.962.524-1.733.524h-9.422l-1.874 3.207v5.443h5.674v-4.299h5.097l2.861 4.3h6.058l-3.532-5.277c1.025-.537 1.809-1.262 2.354-2.174.545-.911.82-1.977.82-3.2 0-1.302-.313-2.443-.939-3.42-.626-.977-1.513-1.725-2.668-2.246-1.151-.521-2.506-.78-4.061-.78h-4.845l-2.597 4.446h7.081l-.007-.007ZM167.194 7.276h-.978v2.272h-.651V7.276h-.984v-.564h2.613v.564ZM170.41 9.548V7.67l-.939 1.58h-.284l-.922-1.587v1.885h-.597V6.712h.684l.993 1.774 1.039-1.774h.613L171 9.548h-.59Z"/></symbol><symbol viewBox="0 0 16 16" id="map-mark" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aoa)"><path d="m8 13.933 3.3-3.3a4.666 4.666 0 1 0-6.6 0l3.3 3.3Zm0 1.886-4.243-4.243a6 6 0 1 1 8.486 0L8 15.82Zm0-7.152A1.333 1.333 0 1 0 8 6a1.333 1.333 0 0 0 0 2.667ZM8 10a2.667 2.667 0 1 1 0-5.333A2.667 2.667 0 0 1 8 10Z"/></g><defs><clipPath id="aoa"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 70 32" id="notification-icon" xmlns="http://www.w3.org/2000/svg"><path d="m66.011 13.015 2.238-3.972 1.513-2.837h-6.21l-2.205 4.051a1.767 1.767 0 0 1-2.441.671L39.952 0 6.672 13.31a1.04 1.04 0 0 1-1.352-.62 1.08 1.08 0 0 1 .57-1.37c.006-.002.01-.006.014-.008l3.74-1.614L7.77 5.034 3.859 6.72a6.24 6.24 0 0 0-3.372 3.42A6.447 6.447 0 0 0 .464 15a6.243 6.243 0 0 0 3.304 3.438 6.055 6.055 0 0 0 2.432.513c.77 0 1.54-.148 2.278-.446L39.545 6.092l13.524 7.798-2.655 4.399-.651-.417c-.105-4.736-2.608-6.07-3.771-6.433-1.46-.455-3.083-.201-4.82.754-1.415.778-2.954 2.056-4.573 3.8-3.109 3.344-6.522 8.362-10.16 14.929l-3.477-4.255a8.258 8.258 0 0 0 1.203-1.465c1.57-2.452 1.698-5.518.383-9.11l-5.04 1.938c.68 1.852.732 3.248.156 4.149-.53.828-2.229 2.262-7.648 2.545l-1.568.082L6.945 32h6.015l.92-1.89c1.57-.157 2.985-.422 4.234-.79l2.19 2.68h11.745c1.33-2.322 2.633-4.43 3.888-6.292l3.371 2.148L36.925 32h6.248l3.441-5.981-7.416-4.728c.236-.286.469-.561.7-.825 2.354-2.688 3.767-3.442 4.343-3.651.1.355.214 1.063.105 2.306l-.148 1.688 7.957 5.089 5.722-9.48c3.078.88 6.47-.441 8.14-3.403h-.006Z"/></symbol><symbol viewBox="0 0 16 16" id="pagination-button" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aqa)"><path d="m8.781 8-3.3 3.3.943.943L10.667 8 6.424 3.757l-.943.943 3.3 3.3Z"/></g><defs><clipPath id="aqa"><path transform="matrix(-1 0 0 1 16 0)" d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 40 40" id="quality" xmlns="http://www.w3.org/2000/svg"><path d="M38.438 20a8.437 8.437 0 1 0-14.376 5.988V35a.938.938 0 0 0 1.357.84L30 33.547l4.581 2.291A.937.937 0 0 0 35.937 35v-9.012a8.411 8.411 0 0 0 2.5-5.988Zm-15 0a6.562 6.562 0 1 1 13.124 0 6.562 6.562 0 0 1-13.124 0Zm10.625 13.483-3.644-1.822a.938.938 0 0 0-.838 0l-3.643 1.822v-6.094a8.418 8.418 0 0 0 8.125 0v6.094ZM20.937 30a.938.938 0 0 1-.937.938H6.25a2.188 2.188 0 0 1-2.188-2.188v-20A2.188 2.188 0 0 1 6.25 6.562h27.5a2.187 2.187 0 0 1 2.188 2.188.938.938 0 0 1-1.876 0 .312.312 0 0 0-.312-.313H6.25a.312.312 0 0 0-.313.313v20a.313.313 0 0 0 .313.313H20a.938.938 0 0 1 .938.937Zm-2.5-8.75a.938.938 0 0 1-.937.938h-6.25a.938.938 0 0 1 0-1.875h6.25a.938.938 0 0 1 .938.937Zm0-5a.938.938 0 0 1-.937.938h-6.25a.938.938 0 0 1 0-1.875h6.25a.938.938 0 0 1 .938.937Z"/></symbol><symbol viewBox="0 0 16 16" id="retail" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#asa)"><path d="M2.667 4.276.505 2.115l.943-.944L3.61 3.333h10.16a.666.666 0 0 1 .64.858l-1.6 5.334a.667.667 0 0 1-.64.475H4v1.333h7.334v1.334h-8A.667.667 0 0 1 2.667 12V4.276ZM4 4.666v4h7.675l1.2-4H4Zm-.333 10.667a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></g><defs><clipPath id="asa"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 20 20" id="search" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ata)"><path d="m15.026 13.848 3.569 3.568-1.18 1.18-3.567-3.57a7.466 7.466 0 0 1-4.681 1.64c-4.14 0-7.5-3.36-7.5-7.5 0-4.14 3.36-7.5 7.5-7.5 4.14 0 7.5 3.36 7.5 7.5a7.467 7.467 0 0 1-1.641 4.682Zm-1.672-.619A5.814 5.814 0 0 0 15 9.167a5.832 5.832 0 0 0-5.833-5.834 5.831 5.831 0 0 0-5.834 5.834A5.832 5.832 0 0 0 9.167 15a5.814 5.814 0 0 0 4.062-1.646l.125-.125Z"/></g><defs><clipPath id="ata"><path d="M0 0h20v20H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 16 17" id="sorting" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aua)"><path d="m7.967 5.8-.942.943-1.691-1.691v8.781H4V5.052l-1.69 1.69-.944-.942 3.3-3.3 3.3 3.3Zm6.667 5.4-3.3 3.3-3.3-3.3.943-.943 1.69 1.691V3.167h1.334v8.781l1.69-1.69.943.942Z"/></g><defs><clipPath id="aua"><path transform="translate(0 .5)" d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="swiper-next" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ava)"><path d="m13.172 12-4.95 4.95 1.414 1.414L16 12 9.636 5.636 8.222 7.05l4.95 4.95Z"/></g><defs><clipPath id="ava"><path transform="matrix(-1 0 0 1 24 0)" d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="tooltip" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#awa)"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16.001A8 8 0 0 0 12 20ZM11 7h2v2h-2V7Zm0 4h2v6h-2v-6Z"/></g><defs><clipPath id="awa"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 16 16" id="up" xmlns="http://www.w3.org/2000/svg"><path d="M9 3.828V16H7V3.828L1.636 9.192.222 7.778 8 0l7.778 7.778-1.414 1.414L9 3.828Z"/></symbol><symbol viewBox="0 0 32 32" id="vk" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16ZM8 15.68c0-3.62 0-5.43 1.125-6.555C10.249 8 12.06 8 15.68 8h.64c3.62 0 5.43 0 6.555 1.125C24 10.249 24 12.06 24 15.68v.64c0 3.62 0 5.43-1.125 6.555C21.751 24 19.94 24 16.32 24h-.64c-3.62 0-5.43 0-6.555-1.125C8 21.751 8 19.94 8 16.32v-.64Zm8.513 3.846c-3.647 0-5.727-2.5-5.813-6.66h1.827c.06 3.054 1.406 4.347 2.473 4.614v-4.614h1.72V15.5c1.053-.114 2.16-1.313 2.533-2.633h1.72c-.287 1.626-1.487 2.826-2.34 3.32.853.4 2.22 1.446 2.74 3.34H19.48c-.407-1.267-1.42-2.247-2.76-2.38v2.38h-.207Z"/></symbol><symbol viewBox="0 0 40 40" id="warranty" xmlns="http://www.w3.org/2000/svg"><path d="M32.5 6.563h-25A2.188 2.188 0 0 0 5.312 8.75v9.183c0 13.787 11.67 18.362 14.008 19.139.441.15.919.15 1.36 0 2.343-.781 14.008-5.352 14.008-19.14V8.75A2.188 2.188 0 0 0 32.5 6.562Zm.313 11.373c0 12.5-10.6 16.655-12.726 17.36a.242.242 0 0 1-.174 0c-2.125-.705-12.726-4.86-12.726-17.36V8.75a.312.312 0 0 1 .313-.313h25a.313.313 0 0 1 .313.313v9.186Zm-5.9-2.344a.937.937 0 0 1 0 1.325l-8.75 8.75a.937.937 0 0 1-1.326 0l-3.75-3.75a.938.938 0 0 1 1.325-1.325l3.088 3.081 8.087-8.085a.937.937 0 0 1 1.326 0v.004Z"/></symbol><symbol viewBox="0 0 16 16" id="wholesale" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#baa)"><path d="M5.976 12a2.333 2.333 0 0 1-4.62 0h-.69V4a.667.667 0 0 1 .667-.667h9.333a.667.667 0 0 1 .667.667v1.333h2l2 2.704V12h-1.357a2.333 2.333 0 0 1-4.62 0h-3.38Zm4.023-7.333H2v5.366a2.333 2.333 0 0 1 3.776.634h3.782c.112-.236.262-.45.442-.634V4.667Zm1.334 4h2.666v-.19l-1.338-1.81h-1.328v2Zm.333 4a1 1 0 1 0 0-2.001 1 1 0 0 0 0 2Zm-7-1a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/></g><defs><clipPath id="baa"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 32 32" id="youtube" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Zm9.202-20.808a2.541 2.541 0 0 0-.622-1.12 2.386 2.386 0 0 0-1.073-.649C22.02 9 16.039 9 16.039 9s-5.982.013-7.468.436a2.386 2.386 0 0 0-1.074.649 2.54 2.54 0 0 0-.621 1.12c-.45 2.757-.624 6.957.012 9.603.11.423.324.81.622 1.12.297.31.667.534 1.073.649C10.07 23 16.051 23 16.051 23s5.982 0 7.468-.423a2.387 2.387 0 0 0 1.074-.649c.297-.31.511-.697.621-1.12.474-2.76.62-6.958-.012-9.616ZM13.8 19.383l5.7-3.415-5.7-3.415v6.83Z"/></symbol></svg>
+   <div class="wrapper">
+        <header>
+    <div class="container">
+        <div class="logotype">
+            <svg>
+                <use xlink:href="#logotype"></use>
+            </svg>
+            <span class="logotype__description">
+                Производитель
+                <br>
+                тормозных систем
+                <br>
+                и деталей подвески
+            </span>
+            <a href="index.html" class="absolute-link"></a>
+        </div>
+        <div class="burger-menu">
+            <div class="burger-menu__container">
+                <div class="burger-menu__content">
+                    <div class="burger-menu__header">
+                        <div class="logotype">
+                            <svg>
+                                <use xlink:href="#logotype"></use>
+                            </svg>
+                            <a href="index.html" class="absolute-link"></a>
+                        </div>
+                        <a href="catalog.html" class="main-button _contour catalog-button">Каталог</a>
+                        <div class="burger-menu__button">
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="header-nav">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="about-products.html">О продукции</a></li>
+                        <li><a href="retail.html">Где купить</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="language-catalog">
+            <select name="language-select" id="language-select">
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+                <option value="DEU">DEU</option>
+                <option value="FRA">FRA</option>
+            </select>
+            <a href="catalog.html" class="main-button _inversion catalog-button">Каталог</a>
+        </div>
+        <div class="burger-menu__button">
+            <span></span>
+        </div>
+    </div>
+</header>
+        <main>
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                    <div class="swiper breadcrumbs-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="breadcrumbs__item">
+                                    <a href="index.html">Главная</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <svg class="breadcrumbs__item breadcrumbs__divider">
+                                    <use xlink:href="#breadcrumbs-divider"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="breadcrumbs__item breadcrumbs__current">
+                                    Новости
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="news-section">
+                <div class="section__container">
+                    <div class="news-list" data-aos="fade-up" data-aos-once="true">
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                        <div class="news-list__item">
+                            <h3 class="h4 item-heading">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </h3>
+                            <p class="item-description">
+                                Lorem ipsum dolor sit amet consectetur. 
+                                Donec dui lectus diam integer parturient 
+                                risus accumsan turpis egestas. Fames nam 
+                                quis sit.
+                            </p>
+                            <time datetime="2023-12-28">28.12.2023</time>
+                            <svg class="link-arrow">
+                                <use xlink:href="#link-arrow"></use>
+                            </svg>
+                            <a href="news-page.html" class="absolute-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+    <div class="container">
+        <div class="footer__items">
+            <div class="footer__items__item logotype-social-item">
+                <div class="logotype">
+                    <svg>
+                        <use xlink:href="#logotype"></use>
+                    </svg>
+                    <a href="#" class="absolute-link"></a>
+                </div>
+                <div class="social-media">
+                    <div class="social-media__link">
+                        <a href="#" class="absolute-link" target="_blank"></a>
+                        <svg>
+                            <use xlink:href="#b"></use>
+                        </svg>
+                    </div>
+                    <div class="social-media__link">
+                        <a href="#" class="absolute-link" target="_blank"></a>
+                        <svg>
+                            <use xlink:href="#dzen"></use>
+                        </svg>
+                    </div>
+                    <div class="social-media__link">
+                        <a href="#" class="absolute-link" target="_blank"></a>
+                        <svg>
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </div>
+                    <div class="social-media__link">
+                        <a href="#" class="absolute-link" target="_blank"></a>
+                        <svg>
+                            <use xlink:href="#vk"></use>
+                        </svg>
+                    </div>
+                </div>
+                <a href="tel:+74993212130" target="_blank">+7 499 321-21-30</a>
+                <address>г. Москва, ул. Малая Семеновская, д. 9, стр. 8.</address>
+                <span>©️ ООО «СК ПАРТС» 2023</span>
+            </div>
+            <div class="footer__items__item">
+                <span class="h5">Разделы</span>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="about-products.html">О продукции</a></li>
+                    <li><a href="retail.html">Где купить</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__items__item">
+                <span class="h5">Тормозная система</span>
+                <ul>
+                    <li><a href="products.html">Тормозные диски</a></li>
+                    <li><a href="products.html">Дисковые тормозные колодки</a></li>
+                    <li><a href="products.html">Тормозные барабаны</a></li>
+                    <li><a href="products.html">Барабанные тормозные колодки</a></li>
+                    <li><a href="products.html">Суппорты</a></li>
+                </ul>
+            </div>
+            <div class="footer__items__item">
+                <span class="h5">Подвеска</span>
+                <ul>
+                    <li><a href="products.html">Амортизаторы</a></li>
+                    <li><a href="products.html">Ступицы</a></li>
+                    <li><a href="products.html">Рулевые тяги</a></li>
+                </ul>
+            </div>
+            <div class="footer__items__item">
+                <a href="catalog.html" class="main-button _inversion">Каталог</a>
+            </div>
+            <div class="footer__items__item privacy-up-item">
+                <a href="#" class="privacy-policy">
+                    Политика конфиденциальности
+                </a>
+                <div class="up-button">
+                    <svg>
+                        <use xlink:href="#up"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+   </div>
+   <script src="assets/js/choices.min.js"></script>
+   <script src="assets/js/video.min.js"></script>
+   <script src="assets/js/aos.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/scripts.js"></script>
+</body>
+</html>
